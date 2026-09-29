@@ -25,14 +25,14 @@ To set up the project locally, follow these steps:
 1. **Clone the Repository**:
    Open your terminal and run the following command to clone the repository:
    ```bash
-   git clone https://github.com/your-username/receipt-generator.git
+   git clone https://github.com/JosephFiddes/receipt-generator.git
    cd receipt-generator
    ```
 
 2. **Install Required Packages**:
    Install the necessary Python packages using pip:
    ```bash
-   pip install reportlab
+   pip install -r requirements.txt
    ```
 
 3. **Run the Application**:

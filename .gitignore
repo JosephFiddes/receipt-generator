@@ -1,2 +1,9 @@
+receipt.pdf
+
+# Virtual environment stuff.
 venv
 .venv
+pyvenv.cfg
+Lib
+Scripts
+Include
