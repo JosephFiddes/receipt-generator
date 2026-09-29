@@ -29,20 +29,13 @@ To set up the project locally, follow these steps:
    cd receipt-generator
    ```
 
-2. **Set Up a Virtual Environment** (optional but recommended):
-   Create a virtual environment to manage dependencies:
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate
-   ```
-
-3. **Install Required Packages**:
+2. **Install Required Packages**:
    Install the necessary Python packages using pip:
    ```bash
    pip install reportlab
    ```
 
-4. **Run the Application**:
+3. **Run the Application**:
    Launch the application by executing:
    ```bash
    python app.py
