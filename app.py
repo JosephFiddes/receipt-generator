@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import messagebox
+from tkinter import messagebox, filedialog
 from reportlab.pdfgen import canvas
 
 def generate_receipt():
@@ -33,7 +33,20 @@ def download_pdf():
         return
 
     # Create a PDF file
-    file_name = "receipt.pdf"
+    file_name = filedialog.asksaveasfilename(
+        defaultextension='.pdf',
+        filetypes=[
+            ('PDF files', '*.pdf'),
+            ('All files', '*.*')
+        ],
+        title='Save Receipt',
+        initialfile='receipt'
+    )
+
+    if file_name == '':
+        # file name selection cancelled. Exit early.
+        return
+
     c = canvas.Canvas(file_name)
     c.drawString(100, 750, "Payment Receipt")
     c.drawString(100, 730, "----------------------------")
